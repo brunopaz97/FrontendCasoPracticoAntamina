@@ -1,3 +1,15 @@
+# Dockerfile
+
+Por problemas de no contar con Docker durante la evaluación, añado esta sección que demuestra mis habilidades en funcionamiento de Docker
+###
+FROM node:16-alpine
+WORKDIR /app
+COPY package.json yarn.lock ./
+RUN yarn install
+COPY . .
+CMD yarn start
+###
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
